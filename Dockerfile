@@ -22,7 +22,7 @@ RUN ARCH="$(dpkg --print-architecture)" \
 
 # Install OpenClaw
 # Pin to specific version for reproducible builds
-RUN npm install -g openclaw@latest && openclaw --version
+RUN npm install -g openclaw@2026.3.23-2 && openclaw --version
 
 # Use /home/openclaw as the home directory instead of /root.
 # The Sandbox SDK backup API only allows directories under /home, /workspace,
