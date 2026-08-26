@@ -51,7 +51,8 @@ export function buildEnvVars(env: OpenClawEnv): Record<string, string> {
   if (env.CF_AI_GATEWAY_MODEL) envVars.CF_AI_GATEWAY_MODEL = env.CF_AI_GATEWAY_MODEL;
   if (env.CDP_SECRET) envVars.CDP_SECRET = env.CDP_SECRET;
   if (env.WORKER_URL) envVars.WORKER_URL = env.WORKER_URL;
-
+  if (env.RUNPOD_API_KEY) envVars.RUNPOD_API_KEY = env.RUNPOD_API_KEY  
+  
   // Note: R2 credentials are no longer passed to the container.
   // Persistence is handled by the Sandbox SDK's backup/restore API,
   // which uses presigned URLs from the Worker side.
