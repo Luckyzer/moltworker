@@ -44,6 +44,7 @@ export interface OpenClawEnv {
   WORKER_URL?: string; // Public URL of the worker (for CDP endpoint)
   RUNPOD_API_KEY?: string; // RunPod API key for pod control skill
   WAVESPEED_API_KEY?: string; // WaveSpeed API key for image generation skill
+  OPENROUTER_API_KEY?: string;
   
   // Cron wake-ahead: wake container before OpenClaw cron jobs fire
   CRON_WAKE_AHEAD_MINUTES?: string; // Minutes before a cron job to wake the container (default: 10)
