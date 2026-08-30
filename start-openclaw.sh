@@ -123,7 +123,6 @@ if (process.env.OPENCLAW_DEV_MODE === 'true') {
 //   workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast
 //   openai/gpt-4o
 //   anthropic/claude-sonnet-4-5
-//   openrouter/claude-sonnet-4-5
 if (process.env.CF_AI_GATEWAY_MODEL) {
     const raw = process.env.CF_AI_GATEWAY_MODEL;
     const slashIdx = raw.indexOf('/');
