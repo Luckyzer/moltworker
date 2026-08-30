@@ -43,8 +43,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
         AUTH_ARGS="--auth-choice apiKey"
     elif [ -n "$OPENAI_API_KEY" ]; then
         AUTH_ARGS="--auth-choice openai-api-key"
-    elif [ -n "$OPENROUTER_API_KEY" ]; then
-        AUTH_ARGS="--auth-choice openrouter-api-key"
     fi
 
     openclaw onboard --non-interactive --accept-risk \
